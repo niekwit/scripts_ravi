@@ -65,7 +65,8 @@ p <- ggplot(df, aes(x = `log2FoldChange`,
 
 
 ggsave(plot = p,
-       filename = paste(finalDir, "/",x,"_","volcano.pdf", 
-                        sep=""),
+       filename = "Volcano_plot.pdf",
+       width = 8,
+       height = 10,
        useDingbats = FALSE) #prevents artefacts in Illustrator     
 
